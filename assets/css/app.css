@@ -642,9 +642,10 @@ body[data-seccion='entrar'] #vista { padding-bottom: 0; }
 /* Simulador del WhatsApp automático */
 /* ------------------------------------------------------------------ */
 .robot { display: grid; gap: 22px; margin-top: 8px; }
-@media (min-width: 900px) { .vista--robot { max-width: 1060px; } .robot { grid-template-columns: 380px 1fr; align-items: start; } .robot__agenda { position: sticky; top: 16px; } }
+@media (min-width: 1100px) { .vista--robot { max-width: 1060px; } .robot { grid-template-columns: minmax(0, 380px) minmax(0, 1fr); align-items: start; } .robot__agenda { position: sticky; top: 16px; } }
 .robot__pasos { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 2px; }
-.robot__pasos .boton { min-height: 2.9rem; font-size: .95rem; }
+.robot__pasos .boton { min-height: 2.9rem; font-size: .95rem; white-space: normal; text-align: left; line-height: 1.2; padding-block: .6rem; }
+.robot > * { min-width: 0; }
 .telefono { --wa-fondo: #EFE7DD; width: 100%; max-width: 380px; margin-inline: auto; border-radius: 34px; padding: 10px; background: #15171A; box-shadow: var(--sombra-alta); }
 .telefono__pantalla { position: relative; display: grid; grid-template-rows: auto 1fr auto; height: min(640px, 72dvh); border-radius: 26px; overflow: hidden; background: var(--wa-fondo); }
 .telefono__cab { display: flex; align-items: center; gap: 10px; padding: 12px 14px; background: #075E54; color: #fff; }
