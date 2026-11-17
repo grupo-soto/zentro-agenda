@@ -1,0 +1,14 @@
+{
+  "name": "Agenda · Zentromachine",
+  "short_name": "Agenda",
+  "description": "Contactos, llamadas, WhatsApp, ventas y preguntas a muchos.",
+  "lang": "es",
+  "start_url": "./#/hoy",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F3F2EE",
+  "theme_color": "#F3F2EE",
+  "icons": [
+    { "src": "assets/marca/logos/zentromachine-iso.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
